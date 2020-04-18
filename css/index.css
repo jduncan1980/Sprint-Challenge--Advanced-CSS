@@ -211,9 +211,9 @@ p {
 }
 .navbar .heading-links li a {
   text-decoration: none;
-  font-family: inherit;
-  font-size: 1.6rem;
+  font-size: inherit;
   color: inherit;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;
@@ -311,9 +311,29 @@ footer {
   text-align: center;
   display: inline-block;
   border-radius: 5px;
+  transition: all 0.5s ease;
 }
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text .btn {
+    display: block;
+    width: 100%;
+    padding: 3rem;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283a;
+  font-size: 1.8rem;
+  padding: 2.5%;
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  border: 1px solid #22283a;
+}
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
     display: block;
     width: 100%;
     padding: 3rem;

@@ -90,6 +90,11 @@
 
 			.btn {
 				.buttonMix(@btn-bg-color, white, 1.8rem, 2.5%, 30%);
+
+				&:hover {
+					.buttonMix(white, @btn-bg-color, 1.8rem, 2.5%, 30%);
+					border: 1px solid @btn-bg-color;
+				}
 			}
 		}
 
