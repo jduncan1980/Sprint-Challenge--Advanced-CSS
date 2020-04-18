@@ -7,12 +7,19 @@
 	align-items: @align;
 }
 
-.buttonMix(@bg, @color, @fontSize, @padding) {
+.buttonMix(@bg, @color, @fontSize, @padding, @width) {
 	background-color: @bg;
 	color: @color;
 	font-size: @fontSize;
 	padding: @padding;
+	width: @width;
 	text-align: center;
 	display: inline-block;
 	border-radius: 5px;
+
+	@media @phone {
+		display: block;
+		width: 100%;
+		padding: 3rem;
+	}
 }

@@ -5,6 +5,10 @@
 
 html {
 	font-size: 62.5%;
+
+	@media @phone {
+		font-size: 57%;
+	}
 }
 
 html,
@@ -24,7 +28,7 @@ h5 {
 }
 
 h1 {
-	font-size: 3.8rem;
+	font-size: 4rem;
 }
 
 h2 {
@@ -42,8 +46,12 @@ p {
 
 .container {
 	max-width: 1000px;
-	padding: 0 75px;
+	padding: 0 100px;
 	width: 100%;
 	margin: 0 auto;
 	background-color: white;
+
+	@media @phone {
+		padding: 0;
+	}
 }
