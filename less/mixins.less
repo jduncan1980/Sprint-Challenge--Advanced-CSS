@@ -1,1 +1,18 @@
 // Mixins Here
+
+.flex(@direction, @justify, @align) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.buttonMix(@bg, @color, @fontSize, @padding) {
+	background-color: @bg;
+	color: @color;
+	font-size: @fontSize;
+	padding: @padding;
+	text-align: center;
+	display: inline-block;
+	border-radius: 5px;
+}

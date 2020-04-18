@@ -1,1 +1,29 @@
 // Navigation code here
+
+.navbar {
+	background-color: @nav-bg;
+	padding: 1rem 0 0.4rem 0;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	.flex(column, space-evenly, center);
+
+	.main-heading {
+	}
+
+	.heading-links {
+		.flex(row, center, space-between);
+		width: 60%;
+		padding: 1rem 0;
+		li {
+			// flex-grow: 1;
+			padding: 0 1.6rem;
+			a {
+				text-decoration: none;
+				font-family: inherit;
+				font-size: 1.3rem;
+				color: inherit;
+			}
+		}
+	}
+}
